@@ -1,0 +1,5 @@
+normalise:
+  mode: zscore          # minmax is the other option
+
+align:
+  reference_band: B04   # pick any 10 m band — B02, B03, B04, B08

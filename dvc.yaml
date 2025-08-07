@@ -1,0 +1,28 @@
+stages:
+  # 1️⃣  NORMALISE RAW ZARR ---------------------------------------------------------
+  preprocess_normalise:
+    cmd: >-
+      satpipe normalise
+        data/raw/msi/T35NND_2024_02_15.zarr
+        data/processed/T35NND_2024_02_15_norm.zarr
+        --mode ${params:normalise.mode}
+    deps:
+      - data/raw/msi/T35NND_2024_02_15.zarr
+    outs:
+      - data/processed/T35NND_2024_02_15_norm.zarr
+    params:
+      - normalise.mode
+
+  # 2️⃣  ALIGN EVERYTHING TO 10 m GRID ---------------------------------------------
+  preprocess_align:
+    cmd: >-
+      satpipe align
+        data/processed/T35NND_2024_02_15_norm.zarr
+        data/processed/T35NND_2024_02_15_align.zarr
+        --reference-band ${params:align.reference_band}
+    deps:
+      - data/processed/T35NND_2024_02_15_norm.zarr
+    outs:
+      - data/processed/T35NND_2024_02_15_align.zarr
+    params:
+      - align.reference_band
