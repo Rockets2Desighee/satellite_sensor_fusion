@@ -1,0 +1,10 @@
+dvc[gs,s3,ssh]
+mlflow
+click
+rasterio
+xarray
+zarr
+numpy
+requests
+loguru
+pandas
