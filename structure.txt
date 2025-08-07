@@ -1,0 +1,426 @@
+.
+├── data
+│   ├── fused
+│   ├── processed
+│   └── raw
+│       └── msi
+│           └── T35NND_2024_02_15.zarr
+│               ├── B02
+│               │   ├── c
+│               │   │   ├── 0
+│               │   │   │   └── 0
+│               │   │   ├── 1
+│               │   │   │   └── 0
+│               │   │   ├── 2
+│               │   │   │   └── 0
+│               │   │   ├── 3
+│               │   │   │   └── 0
+│               │   │   ├── 4
+│               │   │   │   └── 0
+│               │   │   └── 5
+│               │   │       └── 0
+│               │   └── zarr.json
+│               ├── B03
+│               │   ├── c
+│               │   │   ├── 0
+│               │   │   │   └── 0
+│               │   │   ├── 1
+│               │   │   │   └── 0
+│               │   │   ├── 2
+│               │   │   │   └── 0
+│               │   │   ├── 3
+│               │   │   │   └── 0
+│               │   │   ├── 4
+│               │   │   │   └── 0
+│               │   │   └── 5
+│               │   │       └── 0
+│               │   └── zarr.json
+│               ├── B04
+│               │   ├── c
+│               │   │   ├── 0
+│               │   │   │   └── 0
+│               │   │   ├── 1
+│               │   │   │   └── 0
+│               │   │   ├── 2
+│               │   │   │   └── 0
+│               │   │   ├── 3
+│               │   │   │   └── 0
+│               │   │   ├── 4
+│               │   │   │   └── 0
+│               │   │   └── 5
+│               │   │       └── 0
+│               │   └── zarr.json
+│               ├── B08
+│               │   ├── c
+│               │   │   ├── 0
+│               │   │   │   └── 0
+│               │   │   ├── 1
+│               │   │   │   └── 0
+│               │   │   ├── 2
+│               │   │   │   └── 0
+│               │   │   ├── 3
+│               │   │   │   └── 0
+│               │   │   ├── 4
+│               │   │   │   └── 0
+│               │   │   └── 5
+│               │   │       └── 0
+│               │   └── zarr.json
+│               ├── x
+│               │   ├── c
+│               │   │   └── 0
+│               │   └── zarr.json
+│               ├── y
+│               │   ├── c
+│               │   │   └── 0
+│               │   └── zarr.json
+│               └── zarr.json
+├── data.dvc
+├── Dockerfile
+├── LICENSE
+├── Makefile
+├── mlruns
+│   ├── 0
+│   │   ├── 033e061bfac04c2d8e79ec231122ac3f
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 2446a13dd5e940759faddbab1ea7a97f
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 250ed2938e4e49e4a44bec54318d33be
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 2882e2afb25540da904c46b2a041eae1
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 3b569ecd52e445dba13cdded92d219fe
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 444e439eaa9449da9d6802804c4ed687
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 4def8033d6a44892af59a89ce0cd1779
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 54364188ce6f4adc9f4ad1b4f58267a8
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 59c0452cffcd4c50b5d18edc417761f6
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 71d47353a6da47fdb97987015c7d40bd
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 73e65b697ab44f7880742c02e48a7588
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 89432317b3a545b08e7843e9f0c3dae3
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 8ad1305a524d48a98d0d656f136e4cfb
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── 9adb4cdb49af47a5988d6416f630f2a7
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── bb4155b154e64d2cb27bdf323f364f31
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── d0263695795c4546a81aae902402a50f
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── d6dc40c377c3487182253b86c3a21aef
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── ecf98c07f8024f5a9fc29bbd52da6298
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── f1bd63bca8064137a2b0458594309107
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   ├── f57c49a15f814bb9b6e43e04c74177a7
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   ├── params
+│   │   │   │   ├── scene_id
+│   │   │   │   ├── sensor
+│   │   │   │   └── zarr_output
+│   │   │   └── tags
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.git.commit
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       └── mlflow.user
+│   │   └── meta.yaml
+│   └── models
+├── notebooks
+│   └── tests
+│       └── test_ingestion.ipynb
+├── outputs
+│   ├── json
+│   ├── logs
+│   └── maps
+├── README.md
+├── requirements.txt
+├── satpipe
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   └── cli.cpython-313.pyc
+│   ├── cli.py
+│   ├── config.yaml
+│   ├── fusion
+│   │   ├── __init__.py
+│   │   └── fuse.py
+│   ├── ingest
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── base.cpython-313.pyc
+│   │   │   ├── msi.cpython-313.pyc
+│   │   │   └── sar.cpython-313.pyc
+│   │   ├── alphaearth.py
+│   │   ├── base.py
+│   │   ├── msi.py
+│   │   └── sar.py
+│   ├── metrics
+│   │   ├── __init__.py
+│   │   └── summary.py
+│   ├── model
+│   │   ├── __init__.py
+│   │   ├── segformer.py
+│   │   ├── uncertainty.py
+│   │   └── yolo.py
+│   ├── preprocess
+│   │   ├── __init__.py
+│   │   ├── align.py
+│   │   └── normalize.py
+│   ├── ui
+│   │   ├── __init__.py
+│   │   └── app.py
+│   └── utils
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-313.pyc
+│       │   └── io.cpython-313.pyc
+│       ├── io.py
+│       ├── log.py
+│       └── registry.py
+├── setup.py
+├── structure.txt
+└── tests
+    ├── __init__.py
+    ├── test_cli.py
+    ├── test_fusion.py
+    └── test_uncertainty.py
+
+164 directories, 260 files
